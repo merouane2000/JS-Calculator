@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS Calculator by Merouane</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+    <script src="index.js"></script>
+    <style>
+        #display{
+            font-size: 3rem;
+        }
+    </style>
+
+  </head>
+  <body>
+
+      <div class="container-fluid my-5">
+          <div class="row text-center">
+              <div class="col">
+                  <h1>JS Calculator by Merouane</h1>
+              </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-10">
+                <div id="display" class="bg-info  py-4  text-white my-3">0</div>
+            </div>
+            <div class="col-2">
+            <div id="secondaryDisplay" class="bg-secondary  py-5 text-white my-3">0</div>
+        </div>
+          </div>
+        <div class="row text-center">
+            <div class="col-4">
+                <button id="zero" class="btn btn-block btn-primary text-white" onclick="updateDisplay(0)">0</button>
+                <button id="one" class="btn btn-block btn-primary text-white" onclick="updateDisplay(1)">1</button>
+                <button id="two" class="btn btn-block btn-primary text-white" onclick="updateDisplay(2)">2</button>
+                <button id="equals" class="btn btn-block btn-success text-white" onclick="updateDisplay('equals')">=</button>
+            </div>
+            <div class="col-4">
+                <button id="three" class="btn btn-block btn-primary text-white" onclick="updateDisplay(3)">3</button>
+                <button id="four" class="btn btn-block btn-primary text-white" onclick="updateDisplay(4)">4</button>
+                <button id="five" class="btn btn-block btn-primary text-white" onclick="updateDisplay(5)">5</button>
+                <button id="clear" class="btn btn-block btn-warning text-white" onclick="clearDisplay()">AC</button>
+            </div>
+            <div class="col-4">
+                <button id="six" class="btn btn-block btn-primary text-white" onclick="updateDisplay(6)">6</button>
+                <button id="seven" class="btn btn-block btn-primary text-white" onclick="updateDisplay(7)">7</button>
+                <button id="eight" class="btn btn-block btn-primary text-white" onclick="updateDisplay(8)">8</button>
+                <button id="nine" class="btn btn-block btn-primary text-white"  onclick="updateDisplay(9)">9</button>
+            </div>
+        </div>
+        <div class="row text-center pt-3">
+            <div class="col">
+                <button id="add" class="btn btn-block btn-danger text-white" onclick="updateDisplay('add')">+</button>
+                
+            </div>
+            <div class="col">
+                <button id="subtract" class="btn btn-block btn-danger text-white" onclick="updateDisplay('subtract')">-</button>
+
+            </div>
+            <div class="col">
+                <button id="multiply" class="btn btn-block btn-danger text-white" onclick="updateDisplay('multiply')">*</button>
+
+            </div>
+            <div class="col">
+                <button id="divide" class="btn btn-block btn-danger text-white" onclick="updateDisplay('divide')">/</button>
+
+            </div>
+            <div class="col">
+
+                <button id="decimal" class="btn btn-block btn-danger text-white" onclick="updateDisplay('decimal')">.</button>
+            </div>
+            <div class="col">
+
+                <button id="negative-Value" class="btn btn-block btn-danger text-white" onclick="updateDisplay('negative-Value')">+/-</button>
+            </div>
+        </div>
+</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
